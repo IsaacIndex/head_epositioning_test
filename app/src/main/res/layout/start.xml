@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Start"
+    android:transitionGroup="true">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Head Reposistioning Test"
+        android:gravity="center_horizontal"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="40dp"
+        android:text="Positions:"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/positions"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_toEndOf="@id/textView4"
+        android:textSize="30dp"
+        android:inputType="number"
+        android:text="1"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="40dp"
+        android:text="Rounds:"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/rounds"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:layout_toEndOf="@id/textView4"
+        android:textSize="30dp"
+        android:inputType="number"
+        android:text="1"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="40dp"
+        android:text="Sets:"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/sets"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:layout_toEndOf="@id/textView4"
+        android:textSize="30dp"
+        android:inputType="number"
+        android:text="1"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textView6"
+        android:layout_marginTop="50dp"
+        android:padding="20dp"
+        android:textSize="20dp"
+        android:text="Next"
+        android:onClick="next"/>
+</RelativeLayout>
